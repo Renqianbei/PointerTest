@@ -12,4 +12,5 @@ import Foundation
 
 func test()  {
 //    UnsafePointer
+    print("test")
 }
