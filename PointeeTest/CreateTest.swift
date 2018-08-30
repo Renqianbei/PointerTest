@@ -14,3 +14,4 @@ func test()  {
 //    UnsafePointer
     print("test")
 }
+func hhelo
