@@ -8,4 +8,7 @@
 
 import Foundation
 
-func hhelo
+//func hhelo
+func hhh()  {
+    //测试
+}
