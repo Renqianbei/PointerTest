@@ -12,9 +12,12 @@
 		6380B5B6213809A4001D8EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6380B5B4213809A4001D8EDD /* Main.storyboard */; };
 		6380B5B8213809A6001D8EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6380B5B7213809A6001D8EDD /* Assets.xcassets */; };
 		6380B5BB213809A6001D8EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6380B5B9213809A6001D8EDD /* LaunchScreen.storyboard */; };
+		6380B5C321380A88001D8EDD /* CreateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6380B5C221380A88001D8EDD /* CreateTest.swift */; };
+		97D8DF88FAA9DC62F04D57C0 /* Pods_PointeeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C4AE8436B198ECA4A32933 /* Pods_PointeeTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		635D668F8428DBCF1BE01323 /* Pods-PointeeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointeeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PointeeTest/Pods-PointeeTest.release.xcconfig"; sourceTree = "<group>"; };
 		6380B5AD213809A4001D8EDD /* PointeeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PointeeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6380B5B0213809A4001D8EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6380B5B2213809A4001D8EDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		6380B5B7213809A6001D8EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6380B5BA213809A6001D8EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6380B5BC213809A6001D8EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6380B5C221380A88001D8EDD /* CreateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTest.swift; sourceTree = "<group>"; };
+		6E5315F456FF953BC04BFBDA /* Pods-PointeeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PointeeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PointeeTest/Pods-PointeeTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C4AE8436B198ECA4A32933 /* Pods_PointeeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PointeeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D8DF88FAA9DC62F04D57C0 /* Pods_PointeeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1167579D09C9E6AA428AE36D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E5315F456FF953BC04BFBDA /* Pods-PointeeTest.debug.xcconfig */,
+				635D668F8428DBCF1BE01323 /* Pods-PointeeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6380B5A4213809A4001D8EDD = {
 			isa = PBXGroup;
 			children = (
 				6380B5AF213809A4001D8EDD /* PointeeTest */,
 				6380B5AE213809A4001D8EDD /* Products */,
+				1167579D09C9E6AA428AE36D /* Pods */,
+				B83C573AC8737C3547608F7B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +72,7 @@
 		6380B5AF213809A4001D8EDD /* PointeeTest */ = {
 			isa = PBXGroup;
 			children = (
+				6380B5C221380A88001D8EDD /* CreateTest.swift */,
 				6380B5B0213809A4001D8EDD /* AppDelegate.swift */,
 				6380B5B2213809A4001D8EDD /* ViewController.swift */,
 				6380B5B4213809A4001D8EDD /* Main.storyboard */,
@@ -64,6 +83,14 @@
 			path = PointeeTest;
 			sourceTree = "<group>";
 		};
+		B83C573AC8737C3547608F7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2C4AE8436B198ECA4A32933 /* Pods_PointeeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6380B5BF213809A6001D8EDD /* Build configuration list for PBXNativeTarget "PointeeTest" */;
 			buildPhases = (
+				4C71D2BCD4E1C03AAFB3FCBC /* [CP] Check Pods Manifest.lock */,
 				6380B5A9213809A4001D8EDD /* Sources */,
 				6380B5AA213809A4001D8EDD /* Frameworks */,
 				6380B5AB213809A4001D8EDD /* Resources */,
+				8E213922E9DA9CA2C3752EA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C71D2BCD4E1C03AAFB3FCBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PointeeTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E213922E9DA9CA2C3752EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PointeeTest/Pods-PointeeTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PointeeTest/Pods-PointeeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6380B5A9213809A4001D8EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +205,7 @@
 			files = (
 				6380B5B3213809A4001D8EDD /* ViewController.swift in Sources */,
 				6380B5B1213809A4001D8EDD /* AppDelegate.swift in Sources */,
+				6380B5C321380A88001D8EDD /* CreateTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +347,13 @@
 		};
 		6380B5C0213809A6001D8EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5315F456FF953BC04BFBDA /* Pods-PointeeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73W5STJ9E9;
 				INFOPLIST_FILE = PointeeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +367,13 @@
 		};
 		6380B5C1213809A6001D8EDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635D668F8428DBCF1BE01323 /* Pods-PointeeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73W5STJ9E9;
 				INFOPLIST_FILE = PointeeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
